@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #5898af;
+  background-image: url('./img/hero.jpg');
+  min-height: 700px;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-title,
+.header-subtitle {
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	width: 100%;
+}
+
+.header-title {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+
+.header-subtitle {
+  color: #fff;
+  font-size: 24px;
+}
+
+.header-button,
+.navigation-menu__button,
+.socials-menu__button {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.navigation-menu {
+  width: 570px;
+  display: flex;
+}
+
+.navigation-menu__item,
+.socials-menu__item {
+	display: inline-block;
+}
+
+.navigation-menu__button {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.navigation-menu__button:hover {
+  background-color: #00b0ff;
+  color: #fff;
+}
+
+.socials-menu {
+
+}
+.socials-menu__button {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #000;
+  background-image: url('./img/sprite.png');
+  background-repeat: no-repeat;
+}
+
+.socials-menu__button--fb { background-position: 14px 10px; }
+.socials-menu__button--insta { background-position: -32px 10px; }
+.socials-menu__button--email { background-position: -78px 10px; }
+
+@font-face {
+  font-family: 'Playfair Display', serif;
+}
