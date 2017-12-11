@@ -23,6 +23,28 @@
   opacity: .03;
 }
 
+.x-decorated {
+  position: relative;
+}
+
+.x-decorated::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+    content: '';
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    background-image: url('./img/sprite.png');
+    background-position: 0 -79px;
+}
+
 ul,
 li {
     margin: 0;
@@ -34,6 +56,25 @@ li {
 .container {
     width: 1170px;
     margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+    font-size: 14px;
+    line-height: 44px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 0 29px;
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    outline: none;
+    background: #00b0ff;
 }
 
 header {
@@ -181,7 +222,7 @@ header a {
 .boards__transparent-title {
     position: absolute;
     z-index: 0;
-    top: 20%;
+    top: 38%;
     right: -26%;
 
     -webkit-transform: rotate(-90deg);
@@ -328,18 +369,7 @@ header a {
 }
 
 .boards__buy {
-    line-height: 44px;
-
     display: inline-block;
-
-    padding: 0 29px;
-
-    cursor: pointer;
-
-    color: white;
-    border: none;
-    outline: none;
-    background: #00b0ff;
 }
 
 .about-us {
@@ -386,21 +416,6 @@ header a {
 
     text-align: center;
     text-transform: uppercase;
-}
-
-.about-us__subtitle:after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-
-    width: 13px;
-    height: 13px;
-
-    content: '';
-    transform: translateX(-50%);
-
-    background-image: url('./img/sprite.png');
-    background-position: 0 -79px;
 }
 
 .about-us__text {
@@ -659,6 +674,72 @@ header a {
 .our-team__card:hover .our-team__location::before {
     background-position: 0 -133px;
 }
+
+.latest-updates {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.latest-updates .container {
+    padding-bottom: 178px;
+
+    text-align: center;
+}
+
+.latest-updates__title {
+    font-size: 18px;
+
+    position: relative;
+
+    padding-bottom: 30px;
+
+    text-transform: uppercase;
+}
+
+
+.latest-updates__item {
+    display: inline-block;
+
+    width: 270px;
+    min-height: 345px;
+    margin: 30px 13px;
+
+    vertical-align: top;
+}
+
+.latest-updates__item:hover {
+    -webkit-box-shadow: 0 2px 30px rgba(0,0,0,.20);
+            box-shadow: 0 2px 30px rgba(0,0,0,.20);
+}
+
+.latest-updates__item-link:hover {
+    color: #02f;
+}
+
+.latest-updates__item-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+.latest-updates__item-link {
+    display: block;
+
+    text-decoration: none;
+
+    color: #787878;
+}
+
+.latest-updates__more {
+    margin: 0;
+    margin-top: 40px;
+
+    text-align: center;
+}
+
 
 @font-face {
     font-family: 'Playfair Display', serif;
