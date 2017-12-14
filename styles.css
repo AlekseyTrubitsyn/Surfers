@@ -425,6 +425,8 @@ header a {
 
     position: relative;
 
+    display: inline-block;
+
     width: 945px;
     padding-top: 90px;
     padding-right: 70px;
