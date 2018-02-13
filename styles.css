@@ -236,6 +236,11 @@ header a {
     letter-spacing: 7px;
 }
 
+.boards__images,
+.boards__description {
+    width: 50%;
+}
+
 .boards__images {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1164,6 +1169,7 @@ header a {
     line-height: 34px;
 
     width: 100%;
+    min-height: 35px;
     padding: 0 25px;
 
     color: #4d4d4d;
